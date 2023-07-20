@@ -782,9 +782,9 @@ border-color: var(--logo-color);
   pointer-events: none;
 }
 .modal-span {
-    display: inline-flex;
     align-items: center;
     justify-content: center;
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border-radius: 2px;
