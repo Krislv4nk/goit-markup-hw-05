@@ -481,8 +481,14 @@ color: #ffffff;
         gap: 16px;
         border-radius: 4px;
         background: var(--iris, #4D5AE5);
+        color: #ffffff;
+        cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-frame {
+    margin-left: 16px;
+}
+
 .footer-btn:hover {
 background-color: var(--super-blue);
 }
@@ -684,14 +690,15 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
                 .modal-tittle {
                     color: var(--main-color);
                         line-height: 1.5;
-                        letter-spacing: 0.013em;
+                        letter-spacing: 0.02em;
                         max-width: 100%;
                         margin-bottom: 16px;
                         text-align: center;
                         font-size: 16px;
+                        font-weight: 500;
                 }
                 .modal-field {
-                    margin-bottom: 4px;
+                    margin-bottom: 8px;
                     position: relative;
                 }
                                 .modal-wrap {
@@ -699,7 +706,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
                                 }
                 .modal-input {
                     border-radius: 4px;
-                        border: 1px solid var(--lightslate, rgba(46, 47, 66, 0.40));
+                        border: 1px solid rgba(46, 47, 66, 0.4);
                         width: 100%;
                         height: 40px;
                         padding: 8px 16px 8px 38px;
@@ -719,8 +726,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     color: var(--lightslate, #8E8F99);
         font-size: 12px;
         line-height: 1.17;
-        letter-spacing: 0.03;
-        display: inline-block;  
+        letter-spacing: 0.04em;
+        display: block;
+        margin-bottom: 4px;
+}
+.modal-user-email {
+    margin-bottom: 16px;
 }
 .modal-input-svg {
     position: absolute;
@@ -740,10 +751,14 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 .modal-textarea {
     border-radius: 4px;
-        border: 1px solid var(--lightslate, rgba(46, 47, 66, 0.40));
+        border: 1px solid rgba(46, 47, 66, 0.4);
         width: 100%;
+        font-size: 12px;
         height: 120px;
         padding: 8px 16px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
         background-color: transparent;
         outline: transparent;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -765,22 +780,26 @@ border-color: var(--logo-color);
   visibility: hidden;
   pointer-events: none;
 }
-.check-text span {
-    display: flex;
+.modal-span {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
-    border-radius: 6px;
-    border: 1px solid var(--lightslate);
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 12px;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox {
+    margin-bottom: 24px;
 }
 
 .modal-check:checked + .check-text span {
     background-color: var(--super-blue);
     border: none;
-    fill: var(--white);
+    fill: var(--cloud);
 }
 
 .modal-check:focus + .check-text span {
@@ -789,11 +808,11 @@ border-color: var(--logo-color);
 .check-text {
     color: var(--lightslate);
     font-size: 12px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.04em;
     display: inline-flex;
     align-items: center;
     position: relative;
-    margin-bottom: 24px;
+    line-height: 1.17;
 }
 .privacy-link {
     color: var(--iris, #4D5AE5);
@@ -810,9 +829,13 @@ border-color: var(--logo-color);
         color: var(--white);
 font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.03;
+    letter-spacing: 0.04em;
     margin: auto;
-
+    display: block;
+font-weight: 500;
+cursor: pointer;
+border: none;
+font-weight: 500;
 }
 .modal-form-bttn:focus {
     background-color: var(--super-blue);
