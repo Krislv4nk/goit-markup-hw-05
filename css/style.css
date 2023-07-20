@@ -485,6 +485,7 @@ color: #ffffff;
         color: #ffffff;
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border: none;
 }
 .footer-frame {
     margin-left: 16px;
@@ -730,9 +731,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         letter-spacing: 0.04em;
         display: block;
         margin-bottom: 4px;
-}
-.modal-user-email {
-    margin-bottom: 16px;
 }
 .modal-input-svg {
     position: absolute;
