@@ -733,9 +733,9 @@ border-color: var(--logo-color);
         letter-spacing: 0.03;
 } 
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .check-text span {
     display: flex;
@@ -783,7 +783,7 @@ border-color: var(--logo-color);
 font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03;
-    margin-left: 110px;
+    margin: auto;
 
 }
 .modal-form-bttn:focus {
