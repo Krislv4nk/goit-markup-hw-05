@@ -810,14 +810,12 @@ border-color: var(--logo-color);
     color: var(--lightslate);
     font-size: 12px;
     letter-spacing: 0.04em;
-    display: inline-flex;
-    align-items: center;
     position: relative;
     line-height: 1.17;
 }
 .privacy-link {
     color: var(--iris, #4D5AE5);
-        letter-spacing: 0.03px;
+        letter-spacing:0.04em;
         text-decoration-line: underline;
 }
 .modal-form-bttn {
